@@ -1,0 +1,66 @@
+body{
+	background-color: grey;
+    background-image: url('images/cloud.png'), url('images/cloud1.png');
+    background-repeat:repeat, repeat;
+    background-attachment:fixed;
+    background-size: 20%, 15%, auto;
+    background-position: 25% 25%, 50% 50%;
+    position:absolute;
+    height:610px,500px;
+    margin:50px;
+    -moz-animation: cloud 10s linear 0s infinite;
+    -webkit-animation: cloud 10s linear 0s infinite;
+    animation: cloud 10s linear 0s infinite;
+   }
+
+#plane {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+
+#plane img {
+    height: 100px;
+    width: 200px;
+}
+
+#enemy1{
+    position: absolute;
+    top: Math.floor((Math.random() * 750) + 1) + 'px';
+    left: 1800;
+
+    -moz-animation: cloud 10s linear 0s infinite;
+    -webkit-animation: cloud 10s linear 0s infinite;
+    animation: cloud 10s linear 0s infinite;
+}
+
+#enemy2{
+    position: absolute;
+    top: Math.floor((Math.random() * 750) + 1) + 'px';
+    left: 1800;
+}
+
+#enemy3{
+    position: absolute;
+    top: Math.floor((Math.random() * 750) + 1) + 'px';
+    left: 1800;
+}
+
+
+@-moz-keyframes cloud {
+    from { background-position: 200% 0, 120% 0; }
+    to  { background-position: -100% 0, -90% 0; }
+}
+@-webkit-keyframes cloud {
+    from { background-position: 200% 0, 120% 0; }
+    to  { background-position: -100% 0, -90% 0; }
+}
+@keyframes cloud {
+    from { background-position: 200% 0, 120% 0; }
+    to  { background-position: -100% 0, -90% 0; }
+}
+
+
